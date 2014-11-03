@@ -40,10 +40,11 @@ define(function(require, exports, module) {
 
 		this.jso = new JSO({
 			providerId: "feideconnect",
-			client_id: "bc279b91-200e-4acb-b64f-d17d39f6116b",
-			redirect_uri: "http://eksamen.andreas.uninettlabs.no/feide-connect-javascript-demo/",
+			client_id: "___fill_in___",
+			redirect_uri: "___fill_in___",
 			authorization: "https://auth.uwap.uninettlabs.no/oauth/authorization"
 		});
+
 
 		this.jso.callback();
 
@@ -141,6 +142,7 @@ define(function(require, exports, module) {
 		var that = this;
 
 		var d = this.jso.dump();
+
 
 		this.jso.getToken(function(token) {
 			$('#tokenOut').append(
